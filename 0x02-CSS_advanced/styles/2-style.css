@@ -1,4 +1,9 @@
 <!..adding colour value..>
+
+  html {
+      scroll-behavior: smooth;
+    }
+
 body {
   color: #161616;
 }
