@@ -1,14 +1,6 @@
-<!..styling the HTML layout..>
+<!..scroll setting..>
 
-<!DOCTYPE html>
-<html>
-<head>
-  <style>
     html {
       scroll-behavior: smooth;
     }
-  </style>
-</head>
-<body>
- </body>
-</html>
+ 
