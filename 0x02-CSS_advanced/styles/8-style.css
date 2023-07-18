@@ -103,7 +103,3 @@ a {
     --line-height-base: 1.5;
     --line-height-big: 1.8;
   }
-
-  body {
-    min-height: var(line-height-base);
-  }
