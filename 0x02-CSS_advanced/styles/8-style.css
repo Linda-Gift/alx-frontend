@@ -105,5 +105,5 @@ a {
   }
 
   body {
-    line-height: var(line-height-base);
+    min-height: var(line-height-base);
   }
