@@ -439,7 +439,7 @@ a[href]:active {
     left: 0;
     background-color: var(--color-white);
     width: 0;
-    height: 20%;
+    height: calc(20% * var(--root-element));
   }
   
   nav .nav-item:hover .nav-link:before {
