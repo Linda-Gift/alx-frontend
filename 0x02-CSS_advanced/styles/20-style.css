@@ -280,11 +280,12 @@ a[href]:active {
     --font-size-small: <your desired small font size>;
   }
 
-.row + .row {
+.row::after {
   content: "";
   display: table;
-  float: none;
+  clear: both;
 }
+
 
 
  
