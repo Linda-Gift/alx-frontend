@@ -1,0 +1,46 @@
+/* Helpers section */
+main section img {
+  width: 100%;
+  height: auto;
+}
+
+/* Section Latest news section */
+@media (max-width: 767px) {
+  section.section-latest-news .row {
+    flex-direction: column;
+  }
+}
+
+/* Grid section */
+.section-padding {
+  padding: 5rem 1.5rem;
+}
+
+.section-body-padding {
+  padding: 2rem 0 0;
+}
+
+@media (max-width: 767px) {
+  ul.row,
+  .row {
+    flex-direction: column;
+    margin: 0;
+  }
+  
+  [class^="col-"],
+  [class*=" col-"] {
+    margin: 0 0 3rem 0;
+  }
+  
+  .col-1-3,
+  .col-1-2 {
+    width: 100%;
+  }
+}
+
+/* Navbar section */
+@media (max-width: 767px) {
+  .navbar-menu {
+    display: none;
+  }
+}
