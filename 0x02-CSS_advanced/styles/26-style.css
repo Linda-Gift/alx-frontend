@@ -389,5 +389,5 @@ a[href]:active {
   .card-testimonial card-quote cite {
     display: block;
     padding-top: calc(1 * var(--root-element));
-    color: var(--color-primary);
+    foreground: var(--color-primary);
   }
