@@ -132,7 +132,7 @@ a {
 
 :root {
   --section-title-margin: 0;
-  --section-title-color: color-black;
+  --section-title-color: var(--color-black);
 }
 
 .section-title {
