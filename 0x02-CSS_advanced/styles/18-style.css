@@ -199,40 +199,46 @@ a[href]:active {
     padding: var(--footer-padding);
   }
 
-  .navbar-menu {
-    float: right;
-  }
+  /* Targeting .navbar-menu class */
+.navbar-menu {
+  float: right;
+}
 
-  nav{
-    margin: 0;
-    padding: 0;
-    text-align: center;
-  }
+/* Targeting nav class */
+nav {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
 
-  nav.nav-item {
-    font-family: var(--nav-item-font-family);
-    font-weight: var(--nav-item-font-weight);
-    font-size: var(--nav-item-font-size);
-    letter-spacing: var(--nav-item-letter-spacing);
-    display: var(--nav-item-display);
-    margin: var(--nav-item-margin);
-  }
+/* Targeting .nav-item class in nav class */
+nav .nav-item {
+  font-family: var(--nav-item-font-family);
+  font-weight: var(--nav-item-font-weight);
+  font-size: var(--nav-item-font-size);
+  letter-spacing: var(--nav-item-letter-spacing);
+  display: var(--nav-item-display);
+  margin: var(--nav-item-margin);
+}
 
-  nav.nav-link {
-    display: block;
-    padding: var(--nav-item-font-size) 1rem;
-  }
+/* Targeting .nav-link class in nav class */
+nav .nav-link {
+  display: block;
+  padding: var(--nav-item-font-size) 1rem;
+}
 
-  nav .nav-link:hover {
-    color: var(--nav-item-link-hover);
-  }
+/* Hover state for .nav-link class in nav class */
+nav .nav-link:hover {
+  color: var(--nav-item-link-hover);
+}
 
-  :root {
-    --nav-item-font-family: font-family-title;
-    --nav-item-font-weight: font-weight-bold;
-    --nav-item-font-size: font-size-medium;
-    --nav-item-letter-spacing: 4%;
-    --nav-item-display: inline-block;
-    --nav-item-margin: 0 0 calc(3 * var(--root-element)) 0;
-    --nav-item-link-hover: color-primary;
-  }
+/* Custom Properties */
+:root {
+  --nav-item-font-family: font-family-title;
+  --nav-item-font-weight: font-weight-bold;
+  --nav-item-font-size: font-size-medium;
+  --nav-item-letter-spacing: 4%;
+  --nav-item-display: inline-block;
+  --nav-item-margin: 0 0 calc(3 * var(--root-element)) 0;
+  --nav-item-link-hover: color-primary;
+}
