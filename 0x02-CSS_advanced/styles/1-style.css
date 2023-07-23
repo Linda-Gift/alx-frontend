@@ -1,4 +1,4 @@
-<!-- scroll setting -->
-   html {
-       scroll-behavior: smooth;
-   }
+/* setting the scroll behavior */
+  html {
+  scroll-behavior: smooth;
+}
