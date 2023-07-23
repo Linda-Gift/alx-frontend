@@ -1,5 +1,5 @@
-<!-- rules that create a new row -->
-@import url('https://necolas.github.io/normalize.css/latest/normalize.css');
+/* Setting @import url('https://necolas.github.io/normalize.css/latest/normalize.css'); */
+/* setting background and hover style to services */
 
 :root {
   --color-primary: #d73953;
