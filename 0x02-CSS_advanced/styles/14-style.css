@@ -1,30 +1,4 @@
-@import url('https://necolas.github.io/normalize.css/latest/normalize.css');
-
-<!--adding to section title value-->
-
-  html {
-      scroll-behavior: smooth;
-    }
-
-body {
-  color: #161616;
-}
-
-a {
-  color: #161616;
-}
-
-.visually-hidden {
-  display: none;
-}
-
-.card-category {
-  color: #D73953;
-}
-
-.section-tagline {
-  color: #D73953;
-}
+/* Setting @import url('https://necolas.github.io/normalize.css/latest/normalize.css'); */
 
 :root {
   --color-primary: #d73953;
@@ -33,129 +7,87 @@ a {
   --color-light-grey: #f3f3f3;
   --color-dark-grey: #353535;
   --text-color: var(--color-black);
+  --font-family-base: "Open Sans", "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  --font-family-title: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-size-small: 1.2rem;
+  --font-size-medium: 1.6rem;
+  --font-size-large: 1.8rem;
+  --font-size-x-large: 2.3rem;
+  --font-size-xx-large: 4.8rem;
+  --font-weight-regular: 400;
+  --font-weight-bold: 700;
+  --line-height-small: 1.2;
+  --line-height-base: 1.5;
+  --line-height-big: 1.8;
+  --section-header-align: center;
+  --section-tagline-transform: uppercase;
+  --section-title-margin: 0;
+  --section-title-color: var(--color-black);
 }
 
-body,
-a {
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+
+body {
   color: var(--text-color);
+  font-family: var(--font-family-base);
+  font-size: var(--font-size-medium);
+  font-weight: var(--font-weight-regular);
+  min-height: var(--line-height-base);
 }
 
-.card-category,
-.section-tagline {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-family-title);
+  font-weight: var(--font-weight-bold);
+}
+
+/* pseudo-class selector */
+a:link {
+  /*elements that have not been visited and also contain hyperlinks*/
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+/* CSS rule targeting visited anchor elements */
+a:visited {
+  font-style: italic;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  background-color: var(--color-light-grey);
+}
+
+.card-category {
   color: var(--color-primary);
 }
 
-:root {
-    --font-family-base: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    --font-family-title: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  }
-  
-  body {
-    font-family: var(--font-family-base);
-  }
-  
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    font-family: var(--font-family-title);
-  }
-
-  :root {
-   --font-size-small: 1.2rem;
-   --font-size-medium: 1.6rem;
-   --font-size-large: 1.8rem;
-   --font-size-x-large: 2.3rem;
-   --font-size-xx-large: 4.8rem;
-  }
-
-  html {
-    font-size: 62.5%;
-
-  }
-
-  :root {
-    --font-weight-regular: 400;
-    --font-weight-bold: 700;
-    }
-  
-    body {
-         font-weight: var(--font-weight-regular);
-    }
-  
-
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    font-weight: var(--font-weight-bold);
-  }
-
-  :root {
-    --font-family-base: "Open Sans", Helvetica Neue, Helvetica, Arial, sans-serif;
-    --font-family-title: "Raleway", Helvetica Neue, Helvetica, Arial, sans-serif;
-  } 
-
-  :root {
-    --line-height-small: 1.2;
-    --line-height-base: 1.5;
-    --line-height-big: 1.8;
-  }
-
-  body {
-    min-height: var(line-height-base);
-  }
-
-  a {
-    text-decoration: none;
-  }
-
-  :root {
-    --section-header-align: center;
-  }
-  
-  .section-header {
-    text-align: var(--section-header-align);
-  }
-
-  :root {
-    --section-tagline-transform: uppercase;
-  }
-  
-  .section-tagline {
-    font-family: font-family-title;
-    text-transform: var(--section-tagline-transform);
-    font-weight: font-weight-bold;
-  }
-
-:root {
-  --section-title-margin: 0;
-  --section-title-color: color-black;
+.section-header {
+  text-align: var(--section-header-align);
 }
 
 .section-title {
-  font-family: font-family-title;
-  font-size: font-size-xx-large;
-  font-weight: font-weight-bold;
+  font-family: var(--font-family-title);
+  font-size: var(--font-size-xx-large);
+  font-weight: var(--font-weight-bold);
   margin: var(--section-title-margin);
   color: var(--section-title-color);
 }
 
-a[href]:link {
- }
-
-a[href]:visited {
-    font-style: italic;
-}
-
-a[href]:hover {
-    text-decoration: underline;
-}
-
-a[href]:active {
-   background-color: var(--color-light-grey);
+.section-tagline {
+  color: var(--color-primary);
+  font-family: var(--font-family-title);
+  text-transform: var(--section-tagline-transform);
+  font-weight: var(--font-weight-bold);
 }
